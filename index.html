@@ -429,9 +429,49 @@
             <p class="modal-paragraph">Leave your contacts and we will call you back</p>
        
             <form class="form" name="form">
-                <input type="text">
-                <input type="text">
-                <input type="text">
+                <div class="form-container">
+                    <label class="form-label" for="user_name">Name</label>
+                    <div class="form-input-container">
+                        <input class="form-input" type="text" id="user_name" name="user_name">
+                        <svg class="form-icon" width="18" height="18">
+                          <use href="./images/icons.svg#icon-User"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label class="form-label" for="user_tel">Phone</label>
+                    <div class="form-input-container">
+                        <input class="form-input" type="tel" id="user_tel" name="user_tel">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-Telephone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label class="form-label" for="user_mail">Email</label>
+                    <div class="form-input-container">
+                        <input class="form-input" type="mail" id="user_mail" name="user_mail">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-Mail"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label class="form-label" for="user_comment">Comment</label>
+                        <textarea class="form-textarea" name="user_comment" id="user_comment" rows="5">Text input</textarea>
+                </div>
+                <div class="checkbox-container">
+                    <label class="form-agreement" for="">
+                    <input class="checkbox visually-hidden" type="checkbox" name="usr_agreement" value="false">
+                    <span class="form-agreement-checkbox">
+                        <svg class="form-agreement-icon" width="10" height="8">
+                          <use href="./images/icons.svg#icon-Done"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the <a class="form-agreement-link" href="">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="modal-bottom-button" type="submit">Send</button>
             </form>
         </div>
     </div>
